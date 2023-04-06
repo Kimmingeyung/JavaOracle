@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+h1 {color:blue;}
+
+/* h1,h2,h3 {
+	color: blue;
+	font-style : italic;
+}
+ */
+
+h1 + h2 {}
+
+
+h1 em {color:red;}
+
+p {
+	font-size: .85em;
+}
+
+body  > p {
+	font-size: medium;
+}
+
+a:link {
+	text-decoration: none;
+	color:blue;
+}
+
+a:visited {
+	text-decoration: underline;
+	color:red;	
+}
+
+a:hover {
+	text-decoration: underline;	
+	color:red;	
+}
+
+a:active {
+	text-decoration: underline;	
+	color:yellow;		
+}
+
+
+
+tbody > tr:nth-child(2n+1) {
+	background-color: #9999ff;
+} 
+
+tbody > tr:nth-child(2n) {
+	background-color: pink;
+}
+
+
+#movie tr:nth-child(2){
+	background-color: green;
+}
+
+img:nth-of-type(1) {
+	float:right;
+}
+
+td:empty {
+	bagckground-color: gray;
+	
+}
+
+.sample {
+	color: navy;
+}
+
+p:not(.sample){
+	color: red;
+}
+
+/* 1-4.html 유사요소*/
+
+p::first-line {
+	font-style: italic;
+}
+
+p::first-letter {
+	font-size: 5em;
+}
+
+.test li {
+	float: left;
+	margin-right: 5px;
+	
+}
+
+.test li:after{
+	padding-left: 15px;
+	content: "/"
+}
+
+
+.test li:before{
+	 padding-left:15px;
+	 content:"/"
+}
+
+.test li:first-child:before {
+	content:"";
+}
+
