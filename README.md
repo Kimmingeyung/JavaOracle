@@ -10,4 +10,4 @@
   <tr><td>5</td><td>movie2</td><td>모델2: 조회/등록/검색 기능추가하기</td><td>2023-04-07</td></tr>
   <tr><td>-</td><td></td><td></td></tr>
 
-<img src="/output/0407.jpg">
+<img src="output/0407.PNG">
