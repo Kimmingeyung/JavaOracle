@@ -2,9 +2,10 @@ package com.oraclejava.project.dto;
 
 public class Movie {
 	 
-	private int movie_id;  
-	private String title; 
-	private int price;
+	private int movie_id;  //영화id
+	private String title;  // 제목
+	private int price;// 가격
+	private String synopsis; // 줄거리
 	
 	public int getMovie_id() {
 		return movie_id;
@@ -23,6 +24,12 @@ public class Movie {
 	}
 	public void setPrice(int price) {
 		this.price = price;
+	}
+	public String getSynopsis() {
+		return synopsis;
+	}
+	public void setSynopsis(String synopsis) {
+		this.synopsis = synopsis;
 	}
 
 	

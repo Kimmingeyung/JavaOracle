@@ -9,7 +9,7 @@ import javax.servlet.ServletException;
 public class OracledbConnection {
 	
 	// jdbc 드라이버
-	private final String DBDIVER = "oracle.jdbc.OracleDriver";
+	private final String DBDRIVER = "oracle.jdbc.OracleDriver";
 	
 	//db 접속 url
 	private final String DBURL = "jdbc:oracle:thin:@localhost:1521:xe";
@@ -26,7 +26,7 @@ public class OracledbConnection {
 	//생성자(생성할 때 DB연결) - 클래스 이름과 동일해야함 
 	public OracledbConnection() { 
 		try {
-			Class.forName(DBDIVER);
+			Class.forName(DBDRIVER);
 			this.con = DriverManager.getConnection(DBURL,DBUSER,DBPASSWORD);
 			
 		} catch (ClassNotFoundException e) {
