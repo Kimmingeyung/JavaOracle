@@ -1,0 +1,42 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap');
+
+
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+a:link {
+	text-decoration: none;
+	color: blue;
+}
+
+
+a:hover {
+	text-decoration: underline;
+	color: red;
+	
+}
+
+a:visited {
+	text-decoration: none;
+}
+
+a:active {
+	text-decoration: underline;
+	color:yellow;
+}
+
+
+#movieList {
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	
+}
+
+
+
+
+
+
