@@ -11,8 +11,8 @@
   <tr><td>6</td><td>movie2</td><td>모델2: 조회/등록/검색/수정/삭제 기능추가(완성)</td><td>23-04-10</td><td><img src="output/0410.PNG" width="200px"></td></tr>
   <tr><td>7</td><td>SprntDemo</td><td>spring:APO예제</td><td>23-04-10</td><td></td></tr>
   <tr><td col=3>8</td><td>Spring1</td><td>spring:text 출력 안녕하세요</td><td>23-04-11</td><td></td></tr>
-  <tr><td></td><td>Spring2</td><td>spring:text 출력 CurrentTime</td><td>23-04-11</td><td></td></tr>
-  <tr><td></td><td>Spring3</td><td>spring:jdbc연동: 조회</td><td>23-04-11</td><td></td></tr>
+  <tr><td>Spring2</td><td>spring:text 출력 CurrentTime</td><td>23-04-11</td><td></td></tr>
+  <tr><td>Spring3</td><td>spring:jdbc연동: 조회</td><td>23-04-11</td><td></td></tr>
  
 <br>
 
