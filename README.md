@@ -13,7 +13,7 @@
   <tr col=3><td>8</td><td>Spring1</td><td>spring:text 출력 안녕하세요</td><td>23-04-11</td><td></td></tr>
   <tr><td></td><td>Spring2</td><td>spring:text 출력 CurrentTime</td><td>23-04-11</td><td></td></tr>
   <tr><td></td><td>Spring3</td><td>spring:jdbc연동: 조회</td><td>23-04-11</td><td></td></tr>
- <tr><td></td><td>tour</td><td>spring:DB매핑;여행사</td><td>23-04-12</td><td><img src="output/0412.PNG" width="200px"><</td></tr>
+ <tr><td>9</td><td>tour</td><td>spring:DB매핑;여행사</td><td>23-04-12</td><td><img src="output/0412.PNG" width="200px"><</td></tr>
 <br>
 
 
