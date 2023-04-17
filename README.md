@@ -15,7 +15,7 @@
   <tr><td></td><td>Spring3</td><td>spring:jdbc연동: 조회</td><td>23-04-11</td><td></td></tr>
  <tr><td>9</td><td>tour</td><td>spring:DB매핑/부트스트링3;여행사</td><td>23-04-12</td><td><img src="output/0412.PNG" width="200px"></td></tr>
  <tr><td>10</td><td>boot4</td><td>spring:;여행사;조회기능/로그인(인코딩/권한)/페이징처리(thymeleaf:redirect/include)</td><td>23-04-12</td><td><img src="output/0413.PNG" width="200px"></td></tr>
- <tr><td>10</td><td>boot4</td><td>spring:;customers/movieDB통합,admin계정(thymeleaf:redirect/include)</td><td>23-04-12</td><td><img src="output/0417.PNG" width="200px"></td></tr>
+ <tr><td>11</td><td>boot4</td><td>spring:;customers/movieDB통합,admin계정(thymeleaf:redirect/include)</td><td>23-04-12</td><td><img src="output/0417.PNG" width="200px"></td></tr>
 <br>
 
 
