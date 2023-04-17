@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>고객정보 수정</h1>
+	<form method="post" action="" th:object="${customer}">
+		<label for="customerName">고객명:</label>
+		<input type="text" name="customerName" id="customerName" th:field="*{customerName}"></br>
+		
+		<label for="customerPass">비밀번호:</label>
+		<!-- <input type="text" name="customerPass" id ="customerPass" th:field="*{customerPass}"></br> -->
+		<input type="password" name="customerPass" id ="customerPass" th:value="*{customerPass}"></br>
+		
+		<label for="customerBirth">생일:</label>
+		<input type="date" name="customerBirth" id ="customerBirth" th:field="*{customerBirth}"></br>
+		
+		<label for="customerJob">직업:</label>
+		<input type="text" name="customerJob" id ="customerJob" th:field="*{customerJob}"></br>
+		
+		<label for="customerMail">메일:</label>
+		<input type="text" name="customerMail" id ="customerMail" th:field="*{customerMail}"></br>
+		
+		<label for="customerTel">전화번호:</label>
+		<input type="text" name="customerTel" id ="customerTel" th:field="*{customerTel}"></br>
+		
+		<label for="customerPost">우편번호:</label>
+		<input type="text" name="customerPost" id ="customerPost" th:field="*{customerPost}"></br>
+		
+		<label for="customerAdd">주소:</label>
+		<input type="text" name="customerAdd" id ="customerAdd" th:field="*{customerAdd}"></br>
+		
+		<input type="submit" value="등록" name="update"></br>
+		<input type="submit" value="삭제" name="delete"></br>
+	</form>
+</body>
+</html>

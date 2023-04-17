@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout = "http://www.ultraq.net.nz/thymeLeaf/Layout">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" th:href="@{/css/home.css}">
+
+
+</head>
+<body>
+	<div th:fragment="admin_contents">
+		<h2>어드민입니다...</h2>
+		<div style="padding-top:20px; padding-bottom:20px">
+			<div id="menu">
+				<ul>
+					<li><a th:href="@{/admin/customers}">고객관리</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="content" th:include="__${admin_contents}__"></div>
+	</div>
+	
+</body>
+</html>
