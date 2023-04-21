@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+h1 {
+	color: blue;
+}
+
+#menu {
+	float: left;
+	width: 25%;
+	
+}
+
+#content {
+	float: right;
+	width: 100%;
+}
+
+.container::after {
+	
+	content : "";
+	display: block;
+	clear: both;
+	
+}
+

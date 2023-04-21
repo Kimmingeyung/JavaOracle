@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+</head>
+<body>
+	<div>
+		<form action="" method="get">
+			<div>
+				<label for="tourName">여행이름</label>
+				<input type="text" id="tourName" name="tourName" th:value="${tourName}"/>
+				<br>
+				<label for="tourDays">여행기간</label>
+				<input type="text" id="tourDays" name="tourDays" th:value="${tourDays}"/>
+				<br>				
+				<label for="depStartDay">출발 일</label>
+				<input type="Date" id="depStartDay" name="depStartDay" th:value="${depStartDay}"/> ~		
+				<input type="Date" id="depEndDay" name="depEndDay" th:value="${depEndDay}"/>
+				<br>
+				<label for="baseStartPrice">가격</label>
+				<input type="text" id="baseStartPrice" name="baseStartPrice" th:value="${baseStartPrice}"/> ~		
+				<input type="text" id="baseEndPrice" name="baseEndPrice" th:value="${baseEndPrice}"/>
+				
+				<button type="submit">검색</button>
+			</div>
+			
+		</form>
+	</div>
+ 
+	<table class="table table-hover">
+		<thead>
+			<tr>
+				<th><a>순번</a></th>
+				<th><a>여행이름</a></th>
+				<th><a>여행기간</a></th>
+				<th><a>출발일</a></th>
+				<th><a>가격</a></th>
+			</tr>
+			
+		</thead>
+		<tbody>
+			<tr th:each ="m:${tours}">
+				<td th:text="${m.tourCode}"></td>
+				<td th:text="${m.tourName}"></td>
+				<td th:text="|${m.tourDays}일|"></td> 
+				<td th:text="${#dates.format(m.depDay,'yyyy-mm-dd')}"></td>
+				<td th:text="${#numbers.formatInteger(m.basePrice,3,'COMMA')+'원'}"></td>
+			</tr>
+		
+		</tbody>
+		
+	</table>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+
+
+</html>
