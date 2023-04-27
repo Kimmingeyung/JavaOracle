@@ -18,6 +18,8 @@
  <tr><td>11</td><td>boot4</td><td>spring:;customers/movieDB통합,admin계정(thymeleaf:redirect/include)</td><td>23-04-12</td><td><img src="output/0417.PNG" width="200px"></td></tr>
   <tr><td>12</td><td>boot5</td><td>spring:;로그인(thymeleaf:redirect/include)</td><td>23-04-18</td><td></td></tr>
   <tr><td>12</td><td>boot5</td><td>spring:;회원가입(thymeleaf:redirect/include)</td><td>23-04-21</td><td><img src="output/0421.PNG" width="200px"></td></tr>
+  <tr><td>12</td><td>boot5</td><td>spring:;영화무비(조회/수정/삭제/검색)</td><td>23-04-21</td><td><img src="output/0427.JPG" width="200px"></td></tr>
+<br>
 <br>
 
 
