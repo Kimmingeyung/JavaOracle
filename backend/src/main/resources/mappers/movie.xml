@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mappter 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">	
+<mapper namespace="movie">
+	<select id="list" resultType="com.oraclejava.react.api.Movie">
+		select movie_id,title, price from movie 
+		order by title
+	</select>
+	
+	<select id="findById"
+		resultType="com.oraclejava.react.api.Movie"
+		parameterType="int">
+		select 
+			movie_id
+			, title
+			, price
+			,movie_picture
+			,synopsis 
+			from movie
+			where movie_id = #{movie_id}
+	</select>
+	
+	<insert id="insert" parameterType="com.oraclejava.react.api.Movie">
+		insert into movie(
+			movie_id
+		  , title
+		  , price
+		  , synopsis
+		  , movie_picture)
+		values (
+			movie_seq.nextval
+			, #{title, jdbcType = VARCHAR}
+			, #{price, jdbcType = VARCHAR}
+			, #{synopsis, jdbcType = VARCHAR}
+			<if test="movie_picture != null">
+				, #{movie_picture, jdbcType = VARCHAR}
+			</if>
+			)
+	</insert> 
+	
+	<update id="update" parameterType="com.oraclejava.react.api.Movie">
+			update movie
+				set 
+					title = #{title,jdbcType = VARCHAR}
+				 	,price = #{price,jdbcType = VARCHAR}
+					,synopsis = #{synopsis,jdbcType = VARCHAR}
+					<if test="movie_picture != null">
+						,movie_picture = #{movie_picture}			
+					</if>
+				where movie_id = #{movie_id}	
+	</update>
+		
+	<delete id="delete" parameterType="int">
+		delete 
+		from movie  
+		where movie_id = #{movie_id}
+	</delete>
+	
+	<!-- 제목이나 줄거리 검색 -->
+	<select id="search"
+		parameterType="string"
+		resultType="com.oraclejava.react.api.Movie">
+		select movie_id, title, price from movie
+		where title like '%' || #{keyword} || '%'
+				or synopsis like '%' || #{keyword} || '%'
+		order by title
+	</select>
+	
+	
+</mapper>
+
+	
+
+
