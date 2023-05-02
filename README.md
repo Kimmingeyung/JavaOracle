@@ -20,6 +20,8 @@
   <tr><td>12</td><td>boot5</td><td>spring:;회원가입(thymeleaf:redirect/include)</td><td>23-04-21</td><td><img src="output/0421.PNG" width="200px"></td></tr>
   <tr><td>13</td><td>backend</td><td>spring:;영화무비(조회/수정/삭제/검색)</td><td>23-04-21</td><td><img src="output/0427.JPG" width="200px"></td></tr>
   <tr><td>14</td><td>frontend</td><td>react/node.js:;영화무비(조회/수정/삭제/검색)</td><td>23-04-21</td><td><img src="output/0427.JPG" width="200px"></td></tr>
+  <tr><td>15</td><td>backend</td><td>spring5/annotation</td><td>23-05-2</td><td><img src="output/0502.PNG" width="200px"></td></tr>
+ 
 <br>
 <br>
 
